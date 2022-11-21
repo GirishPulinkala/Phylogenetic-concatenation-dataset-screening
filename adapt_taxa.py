@@ -1,7 +1,7 @@
 import csv
 from pprint import pprint
 
-fasta_file = "1094.fasta"
+fasta_file = "27_renamed.fasta"
 tsv_file = "cleaner_table.tsv"
 
 def clean_tax_file(fastaname, tsvname):
@@ -10,8 +10,7 @@ def clean_tax_file(fastaname, tsvname):
     with open(fastaname, "r") as fh:
         for line in fh:
             if line.startswith(">"):
-                x = line.split(":")
-                identifiers.append(x[1])
+                identifiers.append(line[1:-1])
                 
     with open(tsvname) as file:
         tsv_file = csv.reader(file, delimiter="\t")
@@ -23,7 +22,7 @@ def clean_tax_file(fastaname, tsvname):
 
 
 fasta = clean_tax_file(fasta_file, tsv_file)
-f = open("1094.tax", "a")
+f = open("27.tax", "a")
 for line in fasta:
     f.write(line)
 f.close()

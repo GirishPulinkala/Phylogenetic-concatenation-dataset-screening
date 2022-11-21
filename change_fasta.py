@@ -1,8 +1,8 @@
 import csv
 from pprint import pprint
 
-fasta_file = "1094.fasta"
-out_fasta = "1094_renamed.fasta"
+fasta_file = "27.mafft"
+out_fasta = "27_renamed.fasta"
 
 def change_fasta(fastaname, outfastaname):
     identifiers = []
@@ -11,7 +11,7 @@ def change_fasta(fastaname, outfastaname):
         for line in fh:
             if line.startswith(">"):
                 x = line.split(":")
-                f.write(">"+x[1]+"\n")
+                f.write(x[0]+"_"+x[1]+"\n")
             else:
                 f.write(line)
     f.close()
