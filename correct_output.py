@@ -18,4 +18,4 @@ for line in tsv_file:
     classes = name2taxid[name]  #get the taxid
     level = ncbi.get_rank(classes)  #get rank of label
     level_name = level[int(classes[0])]  #get only the rank name
-    f.write(line[0]+"  "+level_name+"  "+line[2]+"  "+line[3]+"  "+line[4]+"\n")
+    f.write(line[0]+"\t"+level_name+"\t"+line[2]+"\t"+line[3]+"\t"+line[4]+"\n")
