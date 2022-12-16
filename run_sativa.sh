@@ -11,6 +11,7 @@ do
     python3 correct_output.py test_${base}.mis corrected_${base}.mis
   else 
     echo "Multiple genes! Will not run SATIVA on component ${base}"
+    echo "${base}" >> multiple_gene_comp.txt
   fi
   
 
