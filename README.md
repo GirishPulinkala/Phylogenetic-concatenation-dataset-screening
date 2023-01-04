@@ -19,3 +19,9 @@ with specific values.
 OBS! Make sure the first method get_gene_name(name) is updated according to the input data before running.
 
 ETE3, argparse, and pandas has to be installed to run.
+
+
+**run_sativa.sh**
+------------
+This file requires existing .mafft files as inputs, as well as a .tsv table with taxonomic information. Additionally it requires the python scripts change_fasta.py, sanity_check.py and correct_output.py. Lastly, it needs the Sativa program to be installed, and the path to this should be inserted on line 10. In addition to the Sativa standard output files this will create a .txt file listing components with possibly more than one gene, as well as .mis files with corrected taxonomic levels. To run use:
+> ./run_sativa.sh
