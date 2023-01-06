@@ -49,8 +49,9 @@ For help run:
 > ./monophyletic_cluster.py -h
 
 
+
 **comparison.py**
 
 To run use:
-comparison.py 'eteoutput' 'sativaoutput'
+> ./comparison.py 'eteoutput' 'sativaoutput'
 
