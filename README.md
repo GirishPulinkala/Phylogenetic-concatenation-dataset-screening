@@ -30,3 +30,24 @@ This file requires existing .mafft files as inputs, as well as a .tsv table with
 ------------
 This script inputs the corrected .mis files from run_sativa.sh above, as well as the .log files from these. It also requires the summary.py script. It outputs a .txt document summarizing the number of mislabels per taxonomic level and per dataset, as well as highlight any warnings from Sativa. To run use:
 > ./post_process.sh
+
+
+
+
+**monophyletic_cluster-py**
+------------
+The program requires the input file in .treefile format
+Technical Requirements: ETE3
+Install ete3 using pip install ete3 in Windows command line.
+
+Change path of ..//data//taxon.tsv to your file path
+
+To run use:
+> ./monophyletic_cluster.py -in infilepath -o outfilepath
+
+For help run:
+> ./monophyletic_cluster.py -h
+
+
+
+
