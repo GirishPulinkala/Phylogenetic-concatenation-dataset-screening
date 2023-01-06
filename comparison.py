@@ -2,6 +2,8 @@
 # coding: utf-8
 
 
+dic=
+
 
 with open ("C://Users//giris//Downloads//27.txt", "r") as f:
     data=f.readlines()
@@ -21,20 +23,6 @@ for i in (ete_list):
         for j in i:
             if len(j[0])>10:
                 ete_set.add(j[0])
-
-
-kiki=[]
-for i in ete_set:
-   
-    for key,values in dic.items():
-        if i in values:
-            kiki.append(key)
-count = pd.Series(kiki).value_counts()
-print(count)
-
-len(g)
-
-
 
 j=[]
 for i in g:
