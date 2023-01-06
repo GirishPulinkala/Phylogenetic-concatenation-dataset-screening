@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import sys
 
-dic=
+infile= sys.argv[1]
+infile_2=sys.argv[2]
 
 
-with open ("C://Users//giris//Downloads//27.txt", "r") as f:
+
+with open (infile, "r") as f:
     data=f.readlines()
 
 
@@ -30,7 +33,7 @@ for i in g:
     j.append(('_'.join(t[:3])))
 
 
-with open ("C://Users//giris//Downloads//new_sativa_results//192_test.mis", "r") as f:
+with open (infile_2, "r") as f:
     data=f.readlines()
 
 
