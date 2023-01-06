@@ -36,11 +36,11 @@ This script inputs the corrected .mis files from run_sativa.sh above, as well as
 
 **monophyletic_cluster-py**
 ------------
-The program requires the input file in .treefile format
-Technical Requirements: ETE3
-Install ete3 using pip install ete3 in Windows command line.
+The program requires the input file in .treefile format, <br />
+Technical Requirements: ETE3, <br />
+Install ete3 using pip install ete3 in Windows command line.<br />
 
-Change path of ..//data//taxon.tsv to your file path
+Change path of ..//taxon.tsv to your file path
 
 To run use:
 > ./monophyletic_cluster.py -in infilepath -o outfilepath
