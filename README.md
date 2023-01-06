@@ -34,7 +34,7 @@ This script inputs the corrected .mis files from run_sativa.sh above, as well as
 
 
 
-**monophyletic_cluster-py**
+**monophyletic_cluster.py**
 ------------
 The program requires the input file in .treefile format, <br />
 Technical Requirements: ETE3, <br />
